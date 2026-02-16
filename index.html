@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AfriPay Bridge</title>
+<style>
+  body { margin:0; font-family:'Segoe UI',sans-serif; background:#F4F6F8; color:#1A1A1A; }
+  header { background:#1ABC9C; color:white; padding:30px 20px; text-align:center; }
+  header h1 { margin:0; font-size:2.2em; }
+  header p { margin:10px 0 0; font-size:1.1em; }
+  nav { display:flex; justify-content:center; gap:20px; margin-top:20px; }
+  nav button { padding:10px 20px; border:none; border-radius:8px; background:white; color:#1ABC9C; font-weight:bold; cursor:pointer; transition:0.2s; }
+  nav button:hover { background:#16A085; color:white; }
+
+  section { max-width:1000px; margin:40px auto; padding:0 20px; }
+  h2 { color:#1ABC9C; margin-bottom:20px; text-align:center; }
+
+  .feature-cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+  .card { background:white; flex:1 1 250px; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05); text-align:center; display:inline-block; transition: transform 0.2s; }
+  .card:hover { transform: translateY(-5px); }
+  .card h3 { margin-bottom:10px; }
+  .card p { font-size:0.95em; }
+
+  .steps { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:30px; }
+  .step { background:#fff; flex:1 1 200px; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05); text-align:center; display:inline-block; }
+  .step h4 { margin-bottom:10px; color:#16A085; }
+  .step p { font-size:0.9em; }
+
+  .cta { text-align:center; margin:50px 0; }
+  .cta button { padding:15px 30px; font-size:1.1em; border:none; border-radius:8px; background:#1ABC9C; color:white; cursor:pointer; transition:0.2s; }
+  .cta button:hover { background:#16A085; }
+
+  input { padding:10px; margin:5px 0; border-radius:8px; border:1px solid #ccc; width:100%; display:inline-block; }
+  button.form-btn { margin-top:10px; width:100%; background:#F1C40F; color:#1A1A1A; font-weight:bold; }
+  button.form-btn:hover { background:#D4AC0D; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AfriPay Bridge</h1>
+  <p>Fast, cheap, cross-border payments + crypto-to-cash</p>
+  <nav>
+    <button onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'})">Sign Up</button>
+    <button onclick="document.getElementById('login').scrollIntoView({behavior:'smooth'})">Login</button>
+  </nav>
+</header>
+
+<section>
+  <h2>Why AfriPay Bridge?</h2>
+  <div class="feature-cards">
+    <div class="card">
+      <h3>Cross-Border Payments</h3>
+      <p>Send and receive money across Africa in multiple currencies instantly and at low cost.</p>
+    </div>
+    <div class="card">
+      <h3>Crypto-to-Cash</h3>
+      <p>Deposit crypto and withdraw to local currency seamlessly without intermediaries.</p>
+    </div>
+    <div class="card">
+      <h3>Multi-Currency Wallets</h3>
+      <p>Hold multiple currencies (USD, ZMW, NGN, BTC, USDT) in one secure wallet.</p>
+    </div>
+    <div class="card">
+      <h3>Secure & Fast</h3>
+      <p>State-of-the-art security with real-time transaction updates.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <h4>1. Sign Up</h4>
+      <p>Create your AfriPay Bridge account in minutes and verify your email.</p>
+    </div>
+    <div class="step">
+      <h4>2. Add Funds</h4>
+      <p>Deposit cash or crypto into your multi-currency wallet securely.</p>
+    </div>
+    <div class="step">
+      <h4>3. Send & Receive</h4>
+      <p>Send money across borders or withdraw to local currency instantly.</p>
+    </div>
+    <div class="step">
+      <h4>4. Track & Manage</h4>
+      <p>View balances, transactions, and conversions in real-time from your dashboard.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Get Started with AfriPay Bridge Today</h2>
+  <button onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'})">Sign Up Now</button>
+</section>
+
+<section id="signup">
+  <h2>Create Your Account</h2>
+  <input type="email" id="signupEmail" placeholder="Email">
+  <input type="password" id="signupPassword" placeholder="Password">
+  <button class="form-btn" id="signupBtn">Sign Up</button>
+</section>
+
+<section id="login">
+  <h2>Login</h2>
+  <input type="email" id="loginEmail" placeholder="Email">
+  <input type="password" id="loginPassword" placeholder="Password">
+  <button class="form-btn" id="loginBtn">Login</button>
+</section>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
